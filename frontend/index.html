@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Tareas</title>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+    <h1 class="text-3xl font-bold text-indigo-600 mb-6">📝 Gestor de Tareas</h1>
+
+    <div class="flex gap-2 mb-6">
+      <input
+        id="taskInput"
+        type="text"
+        placeholder="Nueva tarea..."
+        class="border border-gray-300 rounded-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      />
+      <button
+        id="addBtn"
+        class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700"
+      >
+        Agregar
+      </button>
+    </div>
+
+    <ul id="taskList" class="w-full max-w-md"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
